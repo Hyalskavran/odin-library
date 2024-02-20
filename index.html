@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin - Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Library of books</h1>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Number of pages</th>
+                    <th>Is read</th>
+                    <th>Delete</th>
+                    <th>Toggle Read</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+
+        <h1>Add new book to the library</h1>
+
+        <form action="">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" required>
+            
+            <label for="author">Author</label>
+            <input type="text" name="author" id="author" required>
+
+            <label for="pages">Number of pages</label>
+            <input type="text" name="pages" id="pages" required>
+
+            <fieldset>
+                <legend>Is read</legend>
+
+                <label for="yes">Yes</label>
+                <input type="radio" name="isRead" id="yes" value="yes" required>
+                <label for="no">No</label>
+                <input type="radio" name="isRead" id="no" value="no" required>
+            </fieldset>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+</body>
+</html>
